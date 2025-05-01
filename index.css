@@ -75,9 +75,11 @@ main .page-container {
 
 /* Header */
 .container_header {
+    background-color: var(--color-white);
     border-bottom: 1px solid var(--color-quaternary);
     width: 100%;
-    position: static;
+    position: sticky;
+    top: 0;
 }
 
 .header {
