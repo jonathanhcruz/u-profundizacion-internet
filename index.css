@@ -1,0 +1,242 @@
+/* variables */
+:root {
+    --color-primary: #f90;
+    --color-secondary: #ff6600;
+    --color-quaternary: #e6e6e6;
+    --color-quinary: #cacaca;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-clear-black: #00233b;
+    --color-hover-btn: #9a3412
+}
+
+
+/* Globals */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+main .page-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Titles */
+.gen-title {
+    font-size: 40px;
+    line-height: 43px;
+    font-weight: 900;
+    color: var(--color-clear-black);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Buttons */
+.btn__work-with-us {
+    border-radius: 2em;
+    color: var(--color-white) !important;
+    background-color: var(--color-primary);
+    box-shadow: 0 3px 0 var(--color-primary);
+    font-size: 11px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.btn_search {
+    background: var(--color-secondary) url(https://ucompensar.edu.co/wp-content/themes/wp-compensar/assets/img/search-icon.svg) no-repeat center center;
+    background-size: 24px 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn_submit {
+    background-color: var(--color-secondary);
+    padding: 10px 48px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+
+    &:hover {
+        transition: all 0.5s ease-in-out;
+        background-color: var(--color-hover-btn);
+    }
+}
+
+
+/* Header */
+.container_header {
+    border-bottom: 1px solid var(--color-quaternary);
+    width: 100%;
+    position: static;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    padding-top: 20px;
+}
+
+/* Header - Menu */
+.header__menu-primary{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.header__menu-primary__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    a {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}
+
+
+.header__menu .header__menu-primary__list, .header__menu .header__menu-secondary__list {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    align-items: center;
+    
+    li {
+        padding: 10px 10px;
+
+        a {
+            display: block;
+            color: var(--color-black);
+            font-size: 14px;
+            font-weight: 400;
+            text-decoration: none;
+            font-style: italic;
+            line-clamp: 1;
+            overflow: hidden;
+
+            &:hover {
+                transition: all 0.5s ease-in-out;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.header__menu .header__menu-secondary__list {
+    li a {
+        font-weight: 700;
+        color: inherit;
+        text-decoration: none;
+        padding: 30px 0;
+        display: block;
+        font-size: 18px;
+
+        &:hover {
+            text-decoration: none;
+            color: var(--color-primary);
+        }
+    }
+}
+
+/* Breadcrum */
+.breadcrumb{
+    margin-top: 30px;
+    color: #cacaca;
+    margin-left: 5px;
+    font-size: 11px;
+
+    a {
+        color: #1779ba;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+/* Banner */
+
+/* Form */
+.information-form {
+    border-top: 1px solid var(--color-secondary);
+    border-bottom: 1px solid var(--color-secondary);
+    max-width: 1400px;
+    margin: 55px auto 5px;
+    padding: 40px 0 5px;
+    width: 86%;
+
+    & .information-form__form {
+        display: grid;
+        gap: 20px;
+
+
+        & .information-form__input {
+            position: relative;
+            width: 100%;
+    
+            input {
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid var(--color-quinary);
+                font-size: 14px;
+                color: var(--color-black);
+                background-color: var(--color-white);
+                border: 1px solid #ccc;
+                border-radius: 50px;
+                font-size: 15px;
+            }
+        }
+
+        & .information-form__select {
+            width: 100%;
+            position: relative;
+
+            label {
+                margin-bottom: 10px;
+                display: inline-block;
+            }
+
+            select {
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid var(--color-quinary);
+                font-size: 14px;
+                color: var(--color-black);
+                background-color: var(--color-white);
+                border: 1px solid #ccc;
+                border-radius: 50px;
+                font-size: 15px;
+            }
+
+            .select-icon {
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+            }
+        }
+
+        .information-form__submit {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+}
